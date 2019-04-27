@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}
+
+#name {
+    bottom:50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 60%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#resume {
+    bottom: 50%;
+    left: 0;
+    margin-left: 2%;
+    transform: translateY(50%);
+}
+
+#contact {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects {
+    bottom: 50%;
+    right: 0;
+    margin-right: 2%;
+    transform: translateY(50%);
+}
+
+#socials {
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#insta {
+    position: absolute;
+    left: -150%;
+    transform: translateX(-50%);
+}
+
+#facebook {
+    position: absolute;
+    right: -150%;
+    transform: translateX(50%);
+}
+
+.nav {
+    position: absolute;
+    font-size: 2em;
+    background-color: burlywood;
+}
+
+.socialContainer {
+    position: relative;
+}
+
+.subNav {
+    position: absolute;
+    background-color: burlywood;
+}
