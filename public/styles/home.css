@@ -8,69 +8,210 @@
     -o-box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 section {
     position: relative;
     height: 100vh;
 }
 
+/* HOME section*/
+
+/* ID */
 #name {
-    bottom:50%;
+    bottom: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
     width: 60%;
     text-align: center;
     font-size: 5rem;
+    z-index: 5;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #resume {
     bottom: 50%;
-    left: 0;
     margin-left: 2%;
     transform: translateY(50%);
 }
 
 #contact {
-    top: 15%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#projects {
+#project {
     bottom: 50%;
-    right: 0;
     margin-right: 2%;
     transform: translateY(50%);
 }
 
-#socials {
-    bottom: 15%;
+#social {
     left: 50%;
     transform: translateX(-50%);
 }
 
-#insta {
+#instagram {
     position: absolute;
-    left: -150%;
     transform: translateX(-50%);
 }
 
 #facebook {
     position: absolute;
-    right: -150%;
     transform: translateX(50%);
+}
+
+#github {
+    width: 5em;
+    position: absolute;
+    text-align: center;
+}
+
+#youtube {
+    width: 5em;
+    position: absolute;
+    text-align: center;
+}
+
+#connect {
+    width: 5em;
+    text-align: center;
+}
+
+/* Transformations */
+.resumes {
+    left: 50%;
+    opacity: 0;
+    transition: left 1.2s, opacity .2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    transition-delay: .6s;
+}
+
+.contacts {
+    top: 50%;
+    opacity: 0;
+    transition: top 1.2s, opacity .5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    transition-delay: .6s;
+
+}
+
+.projects {
+    right: 50%;
+    opacity: 0;
+    transition: right 1.2s, opacity .2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    transition-delay: .6s;
+}
+
+.socials {
+    bottom: 50%;
+    opacity: 0;
+    transition: bottom 1.2s, opacity .5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    transition-delay: .6s;
+}
+
+
+.resume-transform {
+    opacity: 1;
+    left: 0;
+    transition: left 1.2s, opacity 1.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+.contact-transform {
+    top: 15%;
+    opacity: 1;
+    transition: top 1.2s, opacity 1.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+.project-transform {
+    right: 0;
+    opacity: 1;
+    transition: right 1.2s, opacity 1.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+.social-transform {
+    bottom: 15%;
+    opacity: 1;
+    transition: bottom 1.2s, opacity 1.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+
+.instagrams {
+    left: 0;
+    opacity: 0;
+    transition: left 1.2s, opacity .5s;
+}
+
+.facebooks {
+    right: 0;
+    opacity: 0;
+    transition: right 1.2s, opacity .5s;
+}
+
+.githubs {
+    top: 0%;
+    opacity: 0;
+    transition: top 1.2s, opacity .5s;
+}
+
+.youtubes {
+    top: 0%;
+    opacity: 0;
+    transition: top 1.2s, opacity .5s;
+}
+
+
+.instagram-transform {
+    left: -80%;
+    opacity: 1;
+    transition: left 1.2s, opacity 1.2s;
+    transition-delay: 1s;
+}
+
+.facebook-transform {
+    right: -80%;
+    opacity: 1;
+    transition: right 1.2s, opacity 1.2s;
+    transition-delay: 1s;
+}
+
+.github-transform {
+    top: -300%;
+    opacity: 1;
+    transition: top 1.2s, opacity 1.2s;
+    transition-delay: 1s;
+}
+
+.youtube-transform {
+    top: 300%;
+    opacity: 1;
+    transition: top 1.2s, opacity 1.2s;
+    transition-delay: 1s;
+}
+
+/* regular classes */
+.socialContainer {
+    position: relative;
 }
 
 .nav {
     position: absolute;
     font-size: 2em;
-    background-color: burlywood;
-}
-
-.socialContainer {
-    position: relative;
 }
 
 .subNav {
     position: absolute;
-    background-color: burlywood;
 }
