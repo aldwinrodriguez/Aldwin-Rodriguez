@@ -85,8 +85,10 @@ section {
     text-align: center;
 }
 
+
+
 /* Transformations */
-.resumes {
+.resume-preTransform {
     left: 50%;
     opacity: 0;
     transition: left 1.2s, opacity .2s;
@@ -94,7 +96,7 @@ section {
     transition-delay: .6s;
 }
 
-.contacts {
+.contact-preTransform {
     top: 50%;
     opacity: 0;
     transition: top 1.2s, opacity .5s;
@@ -103,7 +105,7 @@ section {
 
 }
 
-.projects {
+.project-preTransform {
     right: 50%;
     opacity: 0;
     transition: right 1.2s, opacity .2s;
@@ -111,7 +113,7 @@ section {
     transition-delay: .6s;
 }
 
-.socials {
+.social-preTransform {
     bottom: 50%;
     opacity: 0;
     transition: bottom 1.2s, opacity .5s;
@@ -149,25 +151,27 @@ section {
 }
 
 
-.instagrams {
+
+/* socials Transformations */
+.instagram-preTransform {
     left: 0;
     opacity: 0;
     transition: left 1.2s, opacity .5s;
 }
 
-.facebooks {
+.facebook-preTransform {
     right: 0;
     opacity: 0;
     transition: right 1.2s, opacity .5s;
 }
 
-.githubs {
+.github-preTransform {
     top: 0%;
     opacity: 0;
     transition: top 1.2s, opacity .5s;
 }
 
-.youtubes {
+.youtube-preTransform {
     top: 0%;
     opacity: 0;
     transition: top 1.2s, opacity .5s;
@@ -201,6 +205,8 @@ section {
     transition: top 1.2s, opacity 1.2s;
     transition-delay: 1s;
 }
+
+
 
 /* regular classes */
 .socialContainer {
