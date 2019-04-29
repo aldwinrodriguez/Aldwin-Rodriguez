@@ -1,11 +1,22 @@
+// $(function () {
+//     move();
+//     setTimeout(() => {
+//         move();
+//     }, 2700);
+
+let $nav = $('#home div.nav');
+let $name = $nav[0];
+let $resume = $nav[1];
+let $contact = $nav[2];
+let $project = $nav[3];
+let $social = $nav[4];
+
+// });
+
+
 let el = document.getElementById('name');
 el.addEventListener('click', move);
-window.addEventListener('load', () => {
-    move();
-    setTimeout(() => {
-        move();
-    }, 2700);
-});
+
 
 let resume = el.nextElementSibling;
 let contact = resume.nextElementSibling;
