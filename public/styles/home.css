@@ -6,16 +6,39 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 body {
-    background-color: black;
-    color: white;
+    /* color: white; */
+    font-family: 'Rock Salt', cursive;
+    font-size: calc(100vh / 130);
+    font-weight: bolder;
 }
 
 section {
     position: relative;
     height: 100vh;
+}
+
+.background {
+    background-image: url('../../public/images/1-15.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;
+    transition: filter 1.5s cubic-bezier(1, .01, .76, .56);
+}
+
+.background-tranform {
+    filter: blur(250px);
 }
 
 /* HOME section*/
@@ -25,15 +48,48 @@ section {
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    width: 60%;
+    width: 50%;
     text-align: center;
     font-size: 5rem;
     z-index: 5;
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    font-size: calc(100vw / 16);
+    line-height: 90%;
+    font-weight: normal;
+}
+
+#name span:nth-child(1) {
+    color: rgb(10, 152, 218);
+    vertical-align: text-top;
+    font-size: calc(100vw /10);
+    font-weight: bolder;
+    margin-right: 2%;
+}
+
+#name span:nth-child(8) {
+    color: rgb(128, 128, 211);
+    vertical-align: bottom;
+    font-size: calc(100vw /9);
+    font-weight: bolder;
+}
+
+#name::after {
+    content: '|';
+    position: relative;
+    left: .1em;
+    animation: blink-animation .7s steps(5, start) infinite;
+    -webkit-animation: blink-animation .7s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
 
 #resume {
@@ -130,7 +186,7 @@ section {
 }
 
 .contact-transform {
-    top: 15%;
+    top: calc(100vh / 4.8);
     opacity: 1;
     transition: top 1.2s, opacity 1.2s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
@@ -171,22 +227,26 @@ section {
     transition: top 1.2s, opacity .5s;
 }
 
+.connect-preTransform {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
 .youtube-preTransform {
     top: 0%;
     opacity: 0;
     transition: top 1.2s, opacity .5s;
 }
 
-
 .instagram-transform {
-    left: -80%;
+    left: -130%;
     opacity: 1;
     transition: left 1.2s, opacity 1.2s;
     transition-delay: 1s;
 }
 
 .facebook-transform {
-    right: -80%;
+    right: -130%;
     opacity: 1;
     transition: right 1.2s, opacity 1.2s;
     transition-delay: 1s;
@@ -205,6 +265,12 @@ section {
     transition: top 1.2s, opacity 1.2s;
     transition-delay: 1s;
 }
+
+.connect-transform {
+    opacity: 1;
+    transition: opacity 1.2s;
+}
+
 
 
 
