@@ -14,7 +14,6 @@
 }
 
 body {
-    /* color: white; */
     font-family: 'Rock Salt', cursive;
     font-size: calc(100vh / 130);
     font-weight: bolder;
@@ -34,10 +33,12 @@ section {
     right: 0;
     position: absolute;
     z-index: -10;
+    -webkit-transition: filter 1.5s cubic-bezier(1, .01, .76, .56);
     transition: filter 1.5s cubic-bezier(1, .01, .76, .56);
 }
 
 .background-tranform {
+    -webkit-filter: blur(250px);
     filter: blur(250px);
 }
 
@@ -47,13 +48,15 @@ section {
 #name {
     bottom: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
     width: 50%;
     text-align: center;
     font-size: 5rem;
     z-index: 5;
-    font-size: calc(100vw / 16);
-    line-height: 90%;
+    font-size: calc(100vw / 20);
+    line-height: 100%;
     font-weight: normal;
 }
 
@@ -62,7 +65,6 @@ section {
     vertical-align: text-top;
     font-size: calc(100vw /10);
     font-weight: bolder;
-    margin-right: 2%;
 }
 
 #name span:nth-child(8) {
@@ -95,32 +97,44 @@ section {
 #resume {
     bottom: 50%;
     margin-left: 2%;
+    -ms-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
     transform: translateY(50%);
 }
 
 #contact {
     left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 #project {
     bottom: 50%;
     margin-right: 2%;
+    -ms-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
     transform: translateY(50%);
 }
 
 #social {
     left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 #instagram {
     position: absolute;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 #facebook {
     position: absolute;
+    -ms-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
     transform: translateX(50%);
 }
 
@@ -147,16 +161,22 @@ section {
 .resume-preTransform {
     left: 50%;
     opacity: 0;
+    -webkit-transition: left 1.2s, opacity .2s;
     transition: left 1.2s, opacity .2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    -webkit-transition-delay: .6s;
     transition-delay: .6s;
 }
 
 .contact-preTransform {
     top: 50%;
     opacity: 0;
+    -webkit-transition: top 1.2s, opacity .5s;
     transition: top 1.2s, opacity .5s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    -webkit-transition-delay: .6s;
     transition-delay: .6s;
 
 }
@@ -164,16 +184,22 @@ section {
 .project-preTransform {
     right: 50%;
     opacity: 0;
+    -webkit-transition: right 1.2s, opacity .2s;
     transition: right 1.2s, opacity .2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    -webkit-transition-delay: .6s;
     transition-delay: .6s;
 }
 
 .social-preTransform {
     bottom: 50%;
     opacity: 0;
+    -webkit-transition: bottom 1.2s, opacity .5s;
     transition: bottom 1.2s, opacity .5s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    -webkit-transition-delay: .6s;
     transition-delay: .6s;
 }
 
@@ -181,28 +207,36 @@ section {
 .resume-transform {
     opacity: 1;
     left: 0;
+    -webkit-transition: left 1.2s, opacity 1.2s;
     transition: left 1.2s, opacity 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
 }
 
 .contact-transform {
     top: calc(100vh / 4.8);
     opacity: 1;
+    -webkit-transition: top 1.2s, opacity 1.2s;
     transition: top 1.2s, opacity 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
 }
 
 .project-transform {
     right: 0;
     opacity: 1;
+    -webkit-transition: right 1.2s, opacity 1.2s;
     transition: right 1.2s, opacity 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
 }
 
 .social-transform {
     bottom: 15%;
     opacity: 1;
+    -webkit-transition: bottom 1.2s, opacity 1.2s;
     transition: bottom 1.2s, opacity 1.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
 }
 
@@ -212,62 +246,76 @@ section {
 .instagram-preTransform {
     left: 0;
     opacity: 0;
+    -webkit-transition: left 1.2s, opacity .5s;
     transition: left 1.2s, opacity .5s;
 }
 
 .facebook-preTransform {
     right: 0;
     opacity: 0;
+    -webkit-transition: right 1.2s, opacity .5s;
     transition: right 1.2s, opacity .5s;
 }
 
 .github-preTransform {
     top: 0%;
     opacity: 0;
+    -webkit-transition: top 1.2s, opacity .5s;
     transition: top 1.2s, opacity .5s;
 }
 
 .connect-preTransform {
     opacity: 0;
+    -webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 
 .youtube-preTransform {
     top: 0%;
     opacity: 0;
+    -webkit-transition: top 1.2s, opacity .5s;
     transition: top 1.2s, opacity .5s;
 }
 
 .instagram-transform {
     left: -130%;
     opacity: 1;
+    -webkit-transition: left 1.2s, opacity 1.2s;
     transition: left 1.2s, opacity 1.2s;
+    -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 
 .facebook-transform {
     right: -130%;
     opacity: 1;
+    -webkit-transition: right 1.2s, opacity 1.2s;
     transition: right 1.2s, opacity 1.2s;
+    -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 
 .github-transform {
     top: -300%;
     opacity: 1;
+    -webkit-transition: top 1.2s, opacity 1.2s;
     transition: top 1.2s, opacity 1.2s;
+    -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 
 .youtube-transform {
     top: 300%;
     opacity: 1;
+    -webkit-transition: top 1.2s, opacity 1.2s;
     transition: top 1.2s, opacity 1.2s;
+    -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 
 .connect-transform {
     opacity: 1;
+    -webkit-transition: opacity 1.2s;
     transition: opacity 1.2s;
 }
 
