@@ -11,12 +11,14 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    cursor: url('../../public/images/cursors/Sakura_Arrow.cur'), auto;
 }
 
 body {
     font-family: 'Rock Salt', cursive;
     font-size: calc(100vh / 130);
     font-weight: bolder;
+    overflow: hidden;
 }
 
 section {
@@ -24,8 +26,19 @@ section {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
+}
+
+/* background */
+
 .background {
-    background-image: url('../../public/images/1-15.jpg');
+    background-image: url('../../public/images/beautiful-bloom-blooming-1023953.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,42 +46,79 @@ section {
     right: 0;
     position: absolute;
     z-index: -10;
-    -webkit-transition: filter 1.5s cubic-bezier(1, .01, .76, .56);
-    transition: filter 1.5s cubic-bezier(1, .01, .76, .56);
+    -webkit-filter: blur(5px) saturate(1);
+    filter: blur(5px) saturate(1);
 }
 
 .background-tranform {
-    -webkit-filter: blur(250px);
-    filter: blur(250px);
+    -webkit-filter: blur(30px) saturate(2.3);
+    filter: blur(30px) saturate(2.3);
+    -webkit-transition: filter 1s cubic-bezier(1, .01, .76, .56);
+    transition: filter 1s cubic-bezier(1, .01, .76, .56);
+    transition-delay: 7.7s;
 }
 
 /* HOME section*/
 
 /* ID */
+#home {
+    color: #fd3c4cf8;
+}
+
 #name {
-    bottom: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
-    -webkit-transform: translate(-50%, 50%);
-    -ms-transform: translate(-50%, 50%);
-    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 50%;
     text-align: center;
-    font-size: 5rem;
     z-index: 5;
     font-size: calc(100vw / 20);
     line-height: 100%;
     font-weight: normal;
 }
 
+#name:hover {
+    cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
+}
+
+#name span.change {
+    color: #ccadb8;
+    animation: change-color 3.5s cubic-bezier(1, .01, .76, .56) forwards;
+    -webkit-animation: change-color 3.5s cubic-bezier(1, .01, .76, .56) forwards;
+}
+
+@keyframes change-color {
+    70% {
+        color: rgb(77, 33, 33);
+    }
+
+    100% {
+        color: #ff6262c4;
+    }
+}
+
+@-webkit-keyframes change-color {
+    70% {
+        color: rgb(77, 33, 33);
+    }
+
+    100% {
+        color: #ff6262c4;
+    }
+}
+
 #name span:nth-child(1) {
-    color: rgb(10, 152, 218);
+    color: #fd3c4cf8;
     vertical-align: text-top;
     font-size: calc(100vw /10);
     font-weight: bolder;
 }
 
 #name span:nth-child(8) {
-    color: rgb(128, 128, 211);
+    color: #e7709acb;
     vertical-align: bottom;
     font-size: calc(100vw /9);
     font-weight: bolder;
@@ -76,6 +126,7 @@ section {
 
 #name::after {
     content: '|';
+    color: #7a3a51c4;
     position: relative;
     left: .1em;
     animation: blink-animation .7s steps(5, start) infinite;
@@ -95,11 +146,15 @@ section {
 }
 
 #resume {
-    bottom: 50%;
+    top: 45%;
     margin-left: 2%;
-    -ms-transform: translateY(50%);
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#resume::first-letter {
+    color: #fd3c4cf8;
 }
 
 #contact {
@@ -110,14 +165,15 @@ section {
 }
 
 #project {
-    bottom: 50%;
+    top: 45%;
     margin-right: 2%;
-    -ms-transform: translateY(50%);
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #social {
+    color: #ff6262c4;
     left: 50%;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -140,21 +196,16 @@ section {
 
 #github {
     width: 5em;
-    position: absolute;
     text-align: center;
 }
+
+
 
 #youtube {
     width: 5em;
     position: absolute;
     text-align: center;
 }
-
-#connect {
-    width: 5em;
-    text-align: center;
-}
-
 
 
 /* Transformations */
@@ -193,10 +244,10 @@ section {
 }
 
 .social-preTransform {
-    bottom: 50%;
+    top: 50%;
     opacity: 0;
-    -webkit-transition: bottom 1.2s, opacity .5s;
-    transition: bottom 1.2s, opacity .5s;
+    -webkit-transition: top 1.2s, opacity .5s;
+    transition: top 1.2s, opacity .5s;
     -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     -webkit-transition-delay: .6s;
@@ -214,7 +265,7 @@ section {
 }
 
 .contact-transform {
-    top: calc(100vh / 4.8);
+    top: calc(100vh / 9);
     opacity: 1;
     -webkit-transition: top 1.2s, opacity 1.2s;
     transition: top 1.2s, opacity 1.2s;
@@ -232,10 +283,10 @@ section {
 }
 
 .social-transform {
-    bottom: 15%;
+    top: 75%;
     opacity: 1;
-    -webkit-transition: bottom 1.2s, opacity 1.2s;
-    transition: bottom 1.2s, opacity 1.2s;
+    -webkit-transition: top 1.2s, opacity 1.2s;
+    transition: top 1.2s, opacity 1.2s;
     -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
 }
@@ -244,6 +295,7 @@ section {
 
 /* socials Transformations */
 .instagram-preTransform {
+    top: 300%;
     left: 0;
     opacity: 0;
     -webkit-transition: left 1.2s, opacity .5s;
@@ -251,23 +303,11 @@ section {
 }
 
 .facebook-preTransform {
+    top: 300%;
     right: 0;
     opacity: 0;
     -webkit-transition: right 1.2s, opacity .5s;
     transition: right 1.2s, opacity .5s;
-}
-
-.github-preTransform {
-    top: 0%;
-    opacity: 0;
-    -webkit-transition: top 1.2s, opacity .5s;
-    transition: top 1.2s, opacity .5s;
-}
-
-.connect-preTransform {
-    opacity: 0;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s;
 }
 
 .youtube-preTransform {
@@ -277,7 +317,14 @@ section {
     transition: top 1.2s, opacity .5s;
 }
 
+.github-preTransform {
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
 .instagram-transform {
+    top: 300%;
     left: -130%;
     opacity: 1;
     -webkit-transition: left 1.2s, opacity 1.2s;
@@ -287,19 +334,11 @@ section {
 }
 
 .facebook-transform {
+    top: 300%;
     right: -130%;
     opacity: 1;
     -webkit-transition: right 1.2s, opacity 1.2s;
     transition: right 1.2s, opacity 1.2s;
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
-}
-
-.github-transform {
-    top: -300%;
-    opacity: 1;
-    -webkit-transition: top 1.2s, opacity 1.2s;
-    transition: top 1.2s, opacity 1.2s;
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
@@ -313,10 +352,226 @@ section {
     transition-delay: 1s;
 }
 
-.connect-transform {
+.github-transform {
     opacity: 1;
     -webkit-transition: opacity 1.2s;
     transition: opacity 1.2s;
+}
+
+div.socialContainer div:hover {
+    color: #fd3c4cf8;
+    text-decoration-line: underline;
+}
+
+.fa-github-square {
+    position: absolute;
+    opacity: 0;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4.2em;
+}
+
+div#github:hover .fa-github-square {
+    -webkit-animation: showinGit .25s linear 1 alternate forwards;
+    animation: showinGit .25s linear 1 alternate forwards;
+}
+
+@keyframes showinGit {
+    0% {
+        opacity: 0;
+        top: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        top: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        top: 0;
+        right: 140%;
+    }
+
+    75% {
+        opacity: .75;
+        top: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 100%;
+        right: 50%;
+    }
+}
+
+@-webkit-keyframes showinGit {
+    0% {
+        opacity: 0;
+        top: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        top: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        top: 0;
+        right: 140%;
+    }
+
+    75% {
+        opacity: .75;
+        top: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 100%;
+        right: 50%;
+    }
+}
+
+div#facebook:hover .fa-facebook-square {
+    -webkit-animation: showinfb .25s linear 1 alternate forwards;
+    animation: showinfb .25s linear 1 alternate forwards;
+}
+
+@keyframes showinfb {
+    0% {
+        opacity: 0;
+        bottom: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        bottom: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        bottom: 0;
+        right: 140%;
+    }
+
+    75% {
+        opacity: .75;
+        bottom: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 100%;
+        right: 50%;
+    }
+}
+
+@-webkit-keyframes showinfb {
+    0% {
+        opacity: 0;
+        bottom: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        bottom: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        bottom: 0;
+        right: 140%;
+    }
+
+    75% {
+        opacity: .75;
+        bottom: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 100%;
+        right: 50%;
+    }
+}
+
+
+.fa-instagram,
+.fa-youtube,
+.fa-facebook-square {
+    position: absolute;
+    opacity: 0;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4.2em;
+}
+
+div#youtube:hover .fa-youtube,
+div#instagram:hover .fa-instagram {
+    -webkit-animation: showinIgYt .25s linear 1 alternate forwards;
+    animation: showinIgYt .25s linear 1 alternate forwards;
+}
+
+@keyframes showinIgYt {
+    0% {
+        opacity: 0;
+        bottom: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        bottom: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        bottom: 0;
+        right: -40%;
+    }
+
+    75% {
+        opacity: .75;
+        bottom: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 100%;
+        right: 50%;
+    }
+}
+
+@-webkit-keyframes showinIgYt {
+    0% {
+        opacity: 0;
+        bottom: -200%;
+    }
+
+    25% {
+        opacity: .15;
+        bottom: -150%;
+    }
+
+    50% {
+        opacity: .40;
+        bottom: 0;
+        right: -40%;
+    }
+
+    75% {
+        opacity: .75;
+        bottom: 90%;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 100%;
+        right: 50%;
+    }
 }
 
 
