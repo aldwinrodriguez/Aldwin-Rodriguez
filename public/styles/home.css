@@ -11,6 +11,7 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    overflow: hidden;
     cursor: url('../../public/images/cursors/Sakura_Arrow.cur'), auto;
 }
 
@@ -61,7 +62,6 @@ a:hover {
 /* ID */
 #home {
     color: #fd3c4cf8;
-    overflow: hidden;
     height: 100vh;
 }
 
