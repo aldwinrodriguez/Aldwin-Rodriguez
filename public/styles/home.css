@@ -18,12 +18,10 @@ body {
     font-family: 'Rock Salt', cursive;
     font-size: calc(100vh / 130);
     font-weight: bolder;
-    overflow: hidden;
 }
 
 section {
     position: relative;
-    height: 100vh;
 }
 
 a {
@@ -46,16 +44,16 @@ a:hover {
     right: 0;
     position: absolute;
     z-index: -10;
-    -webkit-filter: blur(5px) saturate(1);
-    filter: blur(5px) saturate(1);
+    -webkit-filter: blur(3px) saturate(1);
+    filter: blur(3px) saturate(1);
 }
 
 .background-tranform {
-    -webkit-filter: blur(30px) saturate(2.3);
-    filter: blur(30px) saturate(2.3);
-    -webkit-transition: filter 1s cubic-bezier(1, .01, .76, .56);
-    transition: filter 1s cubic-bezier(1, .01, .76, .56);
-    transition-delay: 7.7s;
+    -webkit-filter: blur(20px) saturate(1.4);
+    filter: blur(20px) saturate(1.4);
+    -webkit-transition: filter .5s cubic-bezier(1, .01, .76, .56);
+    transition: filter .5s cubic-bezier(1, .01, .76, .56);
+    transition-delay: 8.2s;
 }
 
 /* HOME section*/
@@ -63,6 +61,8 @@ a:hover {
 /* ID */
 #home {
     color: #fd3c4cf8;
+    overflow: hidden;
+    height: 100vh;
 }
 
 #name {
@@ -84,32 +84,6 @@ a:hover {
     cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
 }
 
-#name span.change {
-    color: #ccadb8;
-    animation: change-color 3.5s cubic-bezier(1, .01, .76, .56) forwards;
-    -webkit-animation: change-color 3.5s cubic-bezier(1, .01, .76, .56) forwards;
-}
-
-@keyframes change-color {
-    70% {
-        color: rgb(77, 33, 33);
-    }
-
-    100% {
-        color: #ff6262c4;
-    }
-}
-
-@-webkit-keyframes change-color {
-    70% {
-        color: rgb(77, 33, 33);
-    }
-
-    100% {
-        color: #ff6262c4;
-    }
-}
-
 #name span:nth-child(1) {
     color: #fd3c4cf8;
     vertical-align: text-top;
@@ -122,27 +96,6 @@ a:hover {
     vertical-align: bottom;
     font-size: calc(100vw /9);
     font-weight: bolder;
-}
-
-#name::after {
-    content: '|';
-    color: #7a3a51c4;
-    position: relative;
-    left: .1em;
-    animation: blink-animation .7s steps(5, start) infinite;
-    -webkit-animation: blink-animation .7s steps(5, start) infinite;
-}
-
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-@-webkit-keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
 }
 
 #resume {
@@ -198,8 +151,6 @@ a:hover {
     width: 5em;
     text-align: center;
 }
-
-
 
 #youtube {
     width: 5em;
@@ -358,18 +309,102 @@ a:hover {
     transition: opacity 1.2s;
 }
 
+
+
+/* regular classes */
+.socialContainer {
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    font-size: 2em;
+}
+
+.subNav {
+    position: absolute;
+}
+
 div.socialContainer div:hover {
-    color: #fd3c4cf8;
+    color: #ff6262c4;
     text-decoration-line: underline;
+}
+
+
+/* Fontawesome related */
+
+.fab:hover {
+    color: red;
 }
 
 .fa-github-square {
     position: absolute;
     opacity: 0;
-    top: 100%;
     right: 50%;
     transform: translateX(50%);
     font-size: 4.2em;
+}
+
+.fa-instagram,
+.fa-youtube,
+.fa-facebook-square {
+    position: absolute;
+    opacity: 0;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4.2em;
+}
+
+
+/* Animations */
+
+#name span.change {
+    color: #ccadb8;
+    animation: change-color 3.5s ease-out forwards;
+    -webkit-animation: change-color 3.5s ease-out forwards;
+}
+
+@keyframes change-color {
+    70% {
+        color: rgb(77, 33, 33);
+    }
+
+    100% {
+        color: #ff6262c4;
+    }
+}
+
+@-webkit-keyframes change-color {
+    70% {
+        color: rgb(77, 33, 33);
+    }
+
+    100% {
+        color: #ff6262c4;
+    }
+}
+
+
+#name::after {
+    content: '|';
+    color: #7a3a51c4;
+    position: relative;
+    left: .1em;
+    animation: blink-animation .7s steps(5, start) infinite;
+    -webkit-animation: blink-animation .7s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
 
 div#github:hover .fa-github-square {
@@ -499,17 +534,6 @@ div#facebook:hover .fa-facebook-square {
 }
 
 
-.fa-instagram,
-.fa-youtube,
-.fa-facebook-square {
-    position: absolute;
-    opacity: 0;
-    bottom: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 4.2em;
-}
-
 div#youtube:hover .fa-youtube,
 div#instagram:hover .fa-instagram {
     -webkit-animation: showinIgYt .25s linear 1 alternate forwards;
@@ -574,19 +598,31 @@ div#instagram:hover .fa-instagram {
     }
 }
 
+/* content section */
 
-
-
-/* regular classes */
-.socialContainer {
-    position: relative;
+#content {
+    min-height: 100vh;
+    max-height: 200vh;
+    padding: 5% 1%;
+    background-color: salmon;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
-.nav {
-    position: absolute;
-    font-size: 2em;
+.gif-item {
+    background-color: aliceblue;
+    min-width: 170px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 200px;
+    width: 30%;
+    height: calc(100vw/3);
+    margin: 15px 0;
 }
 
-.subNav {
-    position: absolute;
+.gif-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
