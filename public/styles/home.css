@@ -11,7 +11,6 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    overflow: hidden;
     cursor: url('../../public/images/cursors/Sakura_Arrow.cur'), auto;
 }
 
@@ -37,6 +36,7 @@ a:hover {
 /* background */
 
 .background {
+    overflow: hidden;
     background-image: url('../../public/images/beautiful-bloom-blooming-1023953.jpg');
     background-size: cover;
     background-position: center;
@@ -63,6 +63,7 @@ a:hover {
 #home {
     color: #fd3c4cf8;
     height: 100vh;
+    overflow: hidden;
 }
 
 #name {
@@ -601,6 +602,7 @@ div#instagram:hover .fa-instagram {
 /* content section */
 
 #content {
+    overflow: hidden;
     min-height: 100vh;
     max-height: 200vh;
     padding: 5% 1%;
