@@ -305,24 +305,26 @@ a {
 }
 
 
+/* Fontawesome related */
 
-/* regular classes */
-.socialContainer {
-    position: relative;
-    color: #ff6262;
-    opacity: .7;
-}
-
-.nav {
+.fa-github-square {
     position: absolute;
-    font-size: 2em;
+    opacity: 0;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4.2em;
 }
 
-.subNav {
+.fa-instagram,
+.fa-youtube,
+.fa-facebook-square {
     position: absolute;
+    opacity: 0;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4.2em;
 }
-
-
 
 div.socialContainer div:hover .fab,
 div.socialContainer div:hover .fab::before {
@@ -370,34 +372,6 @@ div.socialContainer div:hover {
 
 div.socialContainer div:hover {
     text-decoration-line: underline;
-}
-
-
-
-/* Fontawesome related */
-
-/* .fab {
-    color: #fd3c4c;
-} */
-
-
-.fa-github-square {
-    position: absolute;
-    opacity: 0;
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 4.2em;
-}
-
-.fa-instagram,
-.fa-youtube,
-.fa-facebook-square {
-    position: absolute;
-    opacity: 0;
-    bottom: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 4.2em;
 }
 
 
@@ -644,32 +618,23 @@ div#instagram:hover .fa-instagram {
     }
 }
 
-/* content section */
 
-#content {
-    overflow: hidden;
-    min-height: 100vh;
-    max-height: 200vh;
-    padding: 5% 1%;
-    background-color: salmon;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+/* regular classes */
+.socialContainer {
+    position: relative;
+    color: #ff6262;
+    opacity: .7;
 }
 
-.gif-item {
-    background-color: aliceblue;
-    min-width: 170px;
-    max-width: 300px;
-    min-height: 100px;
-    max-height: 200px;
-    width: 30%;
-    height: calc(100vw/3);
-    margin: 15px 0;
+.nav {
+    position: absolute;
+    font-size: 2em;
 }
 
-.gif-row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.subNav {
+    position: absolute;
+}
+
+div.sakura {
+    z-index: -100;
 }
