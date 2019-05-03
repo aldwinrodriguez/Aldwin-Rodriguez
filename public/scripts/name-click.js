@@ -16,9 +16,9 @@ $(function () {
     var txt = 'Aldwin Rodriguez .';
 
     typeWriter();
-    setTimeout(() => {
+    setTimeout(function () {
         move();
-        setTimeout(() => {
+        setTimeout(function () {
             move();
         }, 2700);
     }, 8600);

@@ -29,9 +29,9 @@ a {
     color: inherit;
 }
 
-a:hover {
-    cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
-}
+/* a:hover, #name:hover {
+    cursor: url('../../public/images/cursors/Sakura_Link.cur'),url('public/images/cursors/Sakura_Link.cur'), auto;
+} */
 
 /* background */
 
@@ -61,7 +61,8 @@ a:hover {
 
 /* ID */
 #home {
-    color: #fd3c4cf8;
+    color: #fd3c4c;
+    opacity: .98;
     height: 100vh;
     overflow: hidden;
 }
@@ -81,19 +82,17 @@ a:hover {
     font-weight: normal;
 }
 
-#name:hover {
-    cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
-}
-
 #name span:nth-child(1) {
-    color: #fd3c4cf8;
+    color: #fd3c4c;
+    opacity: .98;
     vertical-align: text-top;
     font-size: calc(100vw /10);
     font-weight: bolder;
 }
 
 #name span:nth-child(8) {
-    color: #e7709acb;
+    color: #e7709a;
+    opacity: .75;
     vertical-align: bottom;
     font-size: calc(100vw /9);
     font-weight: bolder;
@@ -105,10 +104,6 @@ a:hover {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-#resume::first-letter {
-    color: #fd3c4cf8;
 }
 
 #contact {
@@ -127,7 +122,6 @@ a:hover {
 }
 
 #social {
-    color: #ff6262c4;
     left: 50%;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -315,6 +309,8 @@ a:hover {
 /* regular classes */
 .socialContainer {
     position: relative;
+    color: #ff6262;
+    opacity: .7;
 }
 
 .nav {
@@ -326,17 +322,64 @@ a:hover {
     position: absolute;
 }
 
+
+
+div.socialContainer div:hover .fab,
+div.socialContainer div:hover .fab::before {
+    color: red;
+    -webkit-transition: color .5s ease;
+    transition: color 1s ease;
+}
+
+div.socialContainer div:hover i::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: calc(100% + 20px);
+    z-index: -10;
+    -ms-transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    border: 0px solid transparent;
+    border-radius: 50%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    color: #e69898;
+}
+
+div.socialContainer div:hover i.fa-instagram::after {
+    content: "\f16d";
+}
+
+div.socialContainer div:hover i.fa-facebook-square::after {
+    content: "\f082";
+}
+
+div.socialContainer div:hover i.fa-youtube::after {
+    content: "\f167";
+}
+
+div.socialContainer div:hover i.fa-github-square::after {
+    content: "\f092";
+}
+
+div.socialContainer div:hover .fab:hover,
 div.socialContainer div:hover {
-    color: #ff6262c4;
+    color: rgb(255, 22, 22);
+}
+
+div.socialContainer div:hover {
     text-decoration-line: underline;
 }
 
 
+
 /* Fontawesome related */
 
-.fab:hover {
-    color: red;
-}
+/* .fab {
+    color: #fd3c4c;
+} */
+
 
 .fa-github-square {
     position: absolute;
@@ -372,7 +415,8 @@ div.socialContainer div:hover {
     }
 
     100% {
-        color: #ff6262c4;
+        color: #ff6262;
+        opacity: .7;
     }
 }
 
@@ -382,7 +426,8 @@ div.socialContainer div:hover {
     }
 
     100% {
-        color: #ff6262c4;
+        color: #ff6262;
+        opacity: .7;
     }
 }
 
