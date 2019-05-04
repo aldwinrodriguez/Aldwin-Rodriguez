@@ -22,6 +22,29 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="public/styles/home.css">
     <link rel="stylesheet" href="public/styles/content.css">
+
+    <style>
+        /* preloader */
+
+        section#home,
+        section#content {
+            display: none;
+        }
+
+        div#loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            background-color: rgba(235, 178, 187, 0.171);
+            background-image: url('public/images/Double\ Ring-1.8s-85px.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,8 +70,8 @@
     </section>
     <section id='content'>
         <div class="gif-row">
-            <div class="gif-item ">
-                <div class="gif-content gif-content1"></div>
+            <div class="gif-item gif-item-1">
+                <div class="gif-content gif-content-1"></div>
             </div>
             <div class="gif-item">2</div>
             <div class="gif-item">3</div>

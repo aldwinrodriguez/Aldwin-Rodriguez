@@ -17,7 +17,7 @@ $(function () {
         move();
         setTimeout(function () {
             move();
-        }, 2400);
+        }, 2600);
     }, 7700);
 
     $($name).on('click', move);

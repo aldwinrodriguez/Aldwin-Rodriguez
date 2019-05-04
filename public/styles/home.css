@@ -54,12 +54,12 @@ div.nav a:hover {
 }
 
 .background-transform {
-    -webkit-filter: blur(15px) saturate(1.4);
-    filter: blur(15px) saturate(1.4);
+    -webkit-filter: blur(20px) saturate(1.4);
+    filter: blur(20px) saturate(1.4);
     -webkit-transition: filter .5s ease;
     transition: filter .5s ease;
-    -webkit-transition-delay: 7.7s;
-    transition-delay: 7.7s;
+    -webkit-transition-delay: 11.3s;
+    transition-delay: 11.3s;
 }
 
 /* HOME section*/
@@ -390,7 +390,7 @@ div.socialContainer div:hover {
 
 @keyframes change-color {
     70% {
-        color: rgb(77, 33, 33);
+        color: rgb(24, 10, 10);
     }
 
     100% {

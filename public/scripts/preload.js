@@ -6,7 +6,7 @@ $('#home').ready(function (){
     setTimeout(function() {
     $('div#loading').remove();
     $('section#home').css("display", "block");
-    $('section#content').css("display", "block");
+    $('section#content').css("display", "flex");
     typeWriter();
     }, 1000);
 

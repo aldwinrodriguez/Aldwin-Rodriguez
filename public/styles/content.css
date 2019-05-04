@@ -1,27 +1,6 @@
-/* preloader */
-
-section#home, section#content {
-    display: none;
-}
-
-div#loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    background-color: rgba(235, 178, 187, 0.171);
-    background-image: url('../images/Double\ Ring-1.8s-85px.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-}
-
 /* content section */
 
-
-#content {
+section#content {
     overflow: hidden;
     min-height: 100vh;
     max-height: 200vh;
@@ -32,30 +11,28 @@ div#loading {
     justify-content: space-around;
 }
 
-.gif-row {
+section#content .gif-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.gif-item {
+section#content .gif-item {
     position: relative;
-    background-color: aliceblue;
-    background-image: url('../images/giphy.gif');
-    background-position: center;
     min-width: 170px;
-    max-width: 300px;
+    max-width: 500px;
     min-height: 100px;
-    max-height: 200px;
+    max-height: 260px;
     width: 30%;
     height: calc(100vw/3);
     margin: 15px 0;
     border-radius: 5px;
 }
 
-.gif-item .gif-content::before,
-.gif-item .gif-content::after {
+section#content .gif-item .gif-content::before,
+section#content .gif-item .gif-content::after {
     font-size: calc(100vh / 70);
+    color: rgb(255, 232, 236);
     width: 100%;
     text-align: center;
     content: '';
@@ -64,18 +41,24 @@ div#loading {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
+    border-radius: 5px;
     transition: bottom .5s ease, background-color .5s ease, opacity .5s ease;
 }
 
-.gif-item:hover .gif-content1::after {
-    content: 'say something';
-    opacity: 1;
-    bottom: 50%;
-}
-
-.gif-item:hover .gif-content1::before {
+section#content .gif-item:hover .gif-content::before {
     content: '';
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(49, 49, 49, 0.137), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(70, 69, 69, 0.137) 20%, rgba(36, 36, 36, 0.726));
     opacity: 1;
+}
+
+section#content div.gif-item-1 {
+    background-image: url('../images/giphy.gif');
+    background-position: center;
+}
+
+section#content .gif-item:hover .gif-content-1::after {
+    content: 'say something asdasd asdasd asf dfsdf sdf sdfsdf sdfd';
+    opacity: 1;
+    bottom: 5%;
 }
