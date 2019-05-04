@@ -58,7 +58,8 @@ div.nav a:hover {
     filter: blur(15px) saturate(1.4);
     -webkit-transition: filter .5s ease;
     transition: filter .5s ease;
-    transition-delay: 9.2s;
+    -webkit-transition-delay: 7.7s;
+    transition-delay: 7.7s;
 }
 
 /* HOME section*/
@@ -383,8 +384,8 @@ div.socialContainer div:hover {
 
 #name span.change {
     color: #ccadb8;
-    animation: change-color 3.5s ease-out forwards;
-    -webkit-animation: change-color 3.5s ease-out forwards;
+    animation: change-color 2s ease-out forwards;
+    -webkit-animation: change-color 2s ease-out forwards;
 }
 
 @keyframes change-color {
