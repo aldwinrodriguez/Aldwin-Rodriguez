@@ -29,6 +29,10 @@ a {
     color: inherit;
 }
 
+div.nav a:hover {
+    text-decoration: underline;
+    cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
+}
 /* a:hover, #name:hover {
     cursor: url('../../public/images/cursors/Sakura_Link.cur'),url('public/images/cursors/Sakura_Link.cur'), auto;
 } */
@@ -49,12 +53,12 @@ a {
     filter: blur(3px) saturate(1);
 }
 
-.background-tranform {
-    -webkit-filter: blur(20px) saturate(1.4);
-    filter: blur(20px) saturate(1.4);
-    -webkit-transition: filter .5s cubic-bezier(1, .01, .76, .56);
-    transition: filter .5s cubic-bezier(1, .01, .76, .56);
-    transition-delay: 8.2s;
+.background-transform {
+    -webkit-filter: blur(15px) saturate(1.4);
+    filter: blur(15px) saturate(1.4);
+    -webkit-transition: filter .5s ease;
+    transition: filter .5s ease;
+    transition-delay: 9.2s;
 }
 
 /* HOME section*/

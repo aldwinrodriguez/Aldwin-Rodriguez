@@ -1,5 +1,5 @@
 $(function () {
-    $($('#home').prev()[0]).addClass('background-tranform');
+    $($('#home').prev()[0]).addClass('background-transform');
 
     let $nav = $('#home div.nav');
     let $name = $nav[0];
@@ -12,16 +12,14 @@ $(function () {
     let $facebook = $socialNav[1];
     let $youtube = $socialNav[2];
     let $github = $socialNav[3];
-    var i = 0;
-    var txt = 'Aldwin Rodriguez .';
 
-    typeWriter();
     setTimeout(function () {
         move();
         setTimeout(function () {
             move();
-        }, 2700);
-    }, 8600);
+        }, 3700);
+    }, 9600);
+
     $($name).on('click', move);
 
     function move() {
@@ -33,20 +31,6 @@ $(function () {
         $($facebook).toggleClass('facebook-transform');
         $($youtube).toggleClass('youtube-transform');
         $($github).toggleClass('github-transform');
-    }
-
-    function typeWriter() {
-        let letter;
-        if (i < txt.length) {
-            if (!(i === 0 || i === 7)) {
-                letter = '<span class="change">' + txt.charAt(i) + '</span>';
-            } else {
-                letter = '<span>' + txt.charAt(i) + '</span>';
-            }
-            $($name).append(letter);
-            i++;
-            setTimeout(typeWriter, 300);
-        }
     }
 
 });

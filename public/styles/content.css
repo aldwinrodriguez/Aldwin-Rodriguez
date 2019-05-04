@@ -1,4 +1,25 @@
+/* preloader */
+
+section#home, section#content {
+    display: none;
+}
+
+div#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(235, 178, 187, 0.171);
+    background-image: url('../images/Double\ Ring-2s-200px.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
 /* content section */
+
 
 #content {
     overflow: hidden;
@@ -20,8 +41,8 @@
 .gif-item {
     position: relative;
     background-color: aliceblue;
-    background-image: url('../images/1-15.jpg');
-    background-position: center; 
+    background-image: url('../images/giphy.gif');
+    background-position: center;
     min-width: 170px;
     max-width: 300px;
     min-height: 100px;
@@ -32,7 +53,8 @@
     border-radius: 5px;
 }
 
-.gif-item .gif-content::before,.gif-item .gif-content::after {
+.gif-item .gif-content::before,
+.gif-item .gif-content::after {
     font-size: calc(100vh / 70);
     width: 100%;
     text-align: center;
@@ -54,6 +76,6 @@
 .gif-item:hover .gif-content1::before {
     content: '';
     height: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(49, 49, 49, 0.137), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(49, 49, 49, 0.137), rgba(0, 0, 0, 0));
     opacity: 1;
 }
