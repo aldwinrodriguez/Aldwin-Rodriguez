@@ -19,6 +19,7 @@ section#content .gif-row {
 
 section#content .gif-item {
     position: relative;
+    background-position: center;
     min-width: 170px;
     max-width: 500px;
     min-height: 100px;
@@ -52,13 +53,79 @@ section#content .gif-item:hover .gif-content::before {
     opacity: 1;
 }
 
-section#content div.gif-item-1 {
-    background-image: url('../images/giphy.gif');
-    background-position: center;
-}
-
-section#content .gif-item:hover .gif-content-1::after {
-    content: 'say something asdasd asdasd asf dfsdf sdf sdfsdf sdfd';
+section#content .gif-item:hover .gif-content::after {
     opacity: 1;
     bottom: 5%;
+}
+
+section#content div#gif-item-1 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-1::after {
+    content: 'say something asdasd asdasd asf dfsdf sdf sdfsdf sdfd';
+}
+
+section#content div#gif-item-2 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-2::after {
+    content: '2';
+}
+
+section#content div#gif-item-3 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-3::after {
+    content: '3';
+}
+
+section#content div#gif-item-4 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-4::after {
+    content: '4';
+}
+
+section#content div#gif-item-5 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-5::after {
+    content: '5';
+}
+
+section#content div#gif-item-6 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-6::after {
+    content: '6';
+}
+
+section#content div#gif-item-7 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-7::after {
+    content: '7';
+}
+
+section#content div#gif-item-8 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-8::after {
+    content: '8';
+}
+
+section#content div#gif-item-9 {
+    background-image: url('../images/giphy.gif');
+}
+
+section#content div#gif-content-9::after {
+    content: '9';
 }
