@@ -5,7 +5,7 @@ section#content {
     min-height: 100vh;
     max-height: 200vh;
     padding: 50px 1%;
-    background-color: salmon;
+    background-color: black;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -18,16 +18,23 @@ section#content .gif-row {
 }
 
 section#content .gif-item {
+    align-self: center;
     position: relative;
+    background-size: cover;
     background-position: center;
     min-width: 170px;
     max-width: 500px;
     min-height: 100px;
     max-height: 260px;
     width: 30%;
-    height: calc(100vw/3);
+    height: calc(100vw/5);
     margin: 15px 0;
     border-radius: 5px;
+    transition: box-shadow .5s ease;
+}
+
+section#content .gif-item:hover {
+    box-shadow: 0px 0px 100px rgb(221, 43, 43);
 }
 
 section#content .gif-item .gif-content::before,
@@ -49,7 +56,7 @@ section#content .gif-item .gif-content::after {
 section#content .gif-item:hover .gif-content::before {
     content: '';
     height: 100%;
-    background-image: linear-gradient(rgba(70, 69, 69, 0.137) 20%, rgba(36, 36, 36, 0.726));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.103) 20%, rgba(0, 0, 0, 0.822));
     opacity: 1;
 }
 
@@ -59,23 +66,23 @@ section#content .gif-item:hover .gif-content::after {
 }
 
 section#content div#gif-item-1 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/Warrior\ dash.gif');
 }
 
 section#content div#gif-content-1::after {
-    content: 'say something asdasd asdasd asf dfsdf sdf sdfsdf sdfd';
+    content: 'Warrior dash';
 }
 
 section#content div#gif-item-2 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/wawa.gif');
 }
 
 section#content div#gif-content-2::after {
-    content: '2';
+    content: 'Wawayanda park';
 }
 
 section#content div#gif-item-3 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/fair.gif');
 }
 
 section#content div#gif-content-3::after {
@@ -83,31 +90,31 @@ section#content div#gif-content-3::after {
 }
 
 section#content div#gif-item-4 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/iowa.gif');
 }
 
 section#content div#gif-content-4::after {
-    content: '4';
+    content: 'Iowa';
 }
 
 section#content div#gif-item-5 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/E3\ Vlog.gif');
 }
 
 section#content div#gif-content-5::after {
-    content: '5';
+    content: 'E3';
 }
 
 section#content div#gif-item-6 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/New\ York.gif');
 }
 
 section#content div#gif-content-6::after {
-    content: '6';
+    content: 'New York';
 }
 
 section#content div#gif-item-7 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/Lit_3.gif');
 }
 
 section#content div#gif-content-7::after {
@@ -115,15 +122,15 @@ section#content div#gif-content-7::after {
 }
 
 section#content div#gif-item-8 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/brooklyn\ museum.gif');
 }
 
 section#content div#gif-content-8::after {
-    content: '8';
+    content: 'Brooklyn Museum';
 }
 
 section#content div#gif-item-9 {
-    background-image: url('../images/giphy.gif');
+    background-image: url('../images/gifs/Lit_3.gif');
 }
 
 section#content div#gif-content-9::after {
