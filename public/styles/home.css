@@ -54,8 +54,8 @@ div.nav a:hover {
 }
 
 .background-transform {
-    -webkit-filter: blur(20px) saturate(1.4);
-    filter: blur(20px) saturate(1.4);
+    -webkit-filter: blur(15px) saturate(1.4);
+    filter: blur(15px) saturate(1.4);
     -webkit-transition: filter 1.2s ease;
     transition: filter 1.2s ease;
     -webkit-transition-delay: 11.3s;

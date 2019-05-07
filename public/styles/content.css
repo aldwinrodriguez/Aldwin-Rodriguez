@@ -1,4 +1,10 @@
 /* content section */
+@media screen and (max-width: 500px) {
+    section#content .gif-item {
+        min-width: 90vw;
+        min-height: 196px;
+    }
+}
 
 section#content {
     overflow: hidden;
@@ -22,14 +28,12 @@ section#content .gif-item {
     position: relative;
     background-size: cover;
     background-position: center;
-    min-width: 170px;
     max-width: 500px;
-    min-height: 100px;
     max-height: 260px;
     width: 30%;
     height: calc(100vw/5);
     margin: 15px 0;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: box-shadow .5s ease;
 }
 
@@ -49,7 +53,7 @@ section#content .gif-item .gif-content::after {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: bottom .5s ease, background-color .5s ease, opacity .5s ease;
 }
 
