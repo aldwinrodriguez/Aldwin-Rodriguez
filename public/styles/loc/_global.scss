@@ -1,0 +1,45 @@
+$global-color: #fd3c4c;
+
+@mixin cursor($cur) {
+    cursor: url('../../public/images/cursors/Sakura_'+$cur+'.cur'), auto;
+}
+
+@mixin positionAbsolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin backgroundCover {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin navPreTransform {
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    transition-delay: .6s;
+}
+
+@mixin navTransform {
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+@mixin socialTransform {
+    top: 300%;
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+@mixin faSocial {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(50%);
+    font-size: 4.2em;
+}
+
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+}

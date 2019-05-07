@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,15 +12,15 @@
     -moz-user-select: none;
     -ms-user-select: none;
     cursor: url('../../public/images/cursors/Sakura_Arrow.cur'), auto;
-}
+} */
 
-body {
+/* body {
     font-family: 'Rock Salt', cursive;
     font-size: calc(100vh / 130);
     font-weight: bolder;
-}
+} */
 
-section {
+/* section {
     position: relative;
 }
 
@@ -32,13 +32,13 @@ a {
 div.nav a:hover {
     text-decoration: underline;
     cursor: url('../../public/images/cursors/Sakura_Link.cur'), auto;
-}
+} */
 /* a:hover, #name:hover {
     cursor: url('../../public/images/cursors/Sakura_Link.cur'),url('public/images/cursors/Sakura_Link.cur'), auto;
 } */
 
 /* background */
-
+/* 
 .background {
     overflow: hidden;
     background-image: url('../../public/images/beautiful-bloom-blooming-1023953.jpg');
@@ -60,19 +60,19 @@ div.nav a:hover {
     transition: filter 1.2s ease;
     -webkit-transition-delay: 11.3s;
     transition-delay: 11.3s;
-}
+} */
 
 /* HOME section*/
 
 /* ID */
-#home {
+/* #home {
     color: #fd3c4c;
     opacity: .98;
     height: 100vh;
     overflow: hidden;
-}
+} */
 
-#name {
+/* #name {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -85,9 +85,9 @@ div.nav a:hover {
     font-size: calc(100vw / 20);
     line-height: 100%;
     font-weight: normal;
-}
+} */
 
-#name span:nth-child(1) {
+/* #name span:nth-child(1) {
     color: #fd3c4c;
     opacity: .98;
     vertical-align: text-top;
@@ -101,17 +101,17 @@ div.nav a:hover {
     vertical-align: bottom;
     font-size: calc(100vw /9);
     font-weight: bolder;
-}
+} */
 
-#resume {
+/* #resume {
     top: 45%;
     margin-left: 2%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-}
+} */
 
-#contact {
+/* #contact {
     left: 50%;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -131,9 +131,9 @@ div.nav a:hover {
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-}
+} */
 
-#instagram {
+/* #instagram {
     position: absolute;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -156,11 +156,11 @@ div.nav a:hover {
     width: 5em;
     position: absolute;
     text-align: center;
-}
+} */
 
 
 /* Transformations */
-.resume-preTransform {
+/* .resume-preTransform {
     left: 50%;
     opacity: 0;
     -webkit-transition: left 1.2s, opacity .2s;
@@ -203,10 +203,10 @@ div.nav a:hover {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
-}
+} */
 
 
-.resume-transform {
+/* .resume-transform {
     opacity: 1;
     left: 0;
     -webkit-transition: left 1.2s, opacity 1.2s;
@@ -240,12 +240,12 @@ div.nav a:hover {
     transition: top 1.2s, opacity 1.2s;
     -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
-}
+} */
 
 
 
 /* socials Transformations */
-.instagram-preTransform {
+/* .instagram-preTransform {
     top: 300%;
     left: 0;
     opacity: 0;
@@ -272,9 +272,9 @@ div.nav a:hover {
     opacity: 0;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
-}
+} */
 
-.instagram-transform {
+/* .instagram-transform {
     top: 300%;
     left: -130%;
     opacity: 1;
@@ -307,12 +307,12 @@ div.nav a:hover {
     opacity: 1;
     -webkit-transition: opacity 1.2s;
     transition: opacity 1.2s;
-}
+} */
 
 
 /* Fontawesome related */
 
-.fa-github-square {
+/* .fa-github-square {
     position: absolute;
     opacity: 0;
     right: 50%;
@@ -377,12 +377,12 @@ div.socialContainer div:hover {
 
 div.socialContainer div:hover {
     text-decoration-line: underline;
-}
+} */
 
 
 /* Animations */
 
-#name span.change {
+/* #name span.change {
     color: #ccadb8;
     animation: change-color 2s ease-out forwards;
     -webkit-animation: change-color 2s ease-out forwards;
@@ -621,25 +621,4 @@ div#instagram:hover .fa-instagram {
         bottom: 100%;
         right: 50%;
     }
-}
-
-
-/* regular classes */
-.socialContainer {
-    position: relative;
-    color: #ff6262;
-    opacity: .7;
-}
-
-.nav {
-    position: absolute;
-    font-size: 2em;
-}
-
-.subNav {
-    position: absolute;
-}
-
-div.sakura {
-    z-index: -100;
-}
+} */
