@@ -1,0 +1,137 @@
+@media screen and (max-width: 500px) {
+    section#content .gif-item {
+        min-width: 90vw;
+        min-height: 196px;
+    }
+}
+
+section#content {
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 50px 1%;
+    // background-color: black;
+    flex-flow: column wrap;
+    @include flexAround;
+
+    .gif-row {
+        flex-flow: row wrap;
+        @include flexAround;
+    }
+
+    .gif-item {
+        align-self: center;
+        position: relative;
+        @include backgroundCover;
+        max-width: 500px;
+        max-height: 260px;
+        width: 30%;
+        height: calc(100vw/5);
+        margin: 15px 0;
+        border-radius: 5px;
+        transition: box-shadow .5s ease;
+    }
+
+    .gif-item:hover {
+        box-shadow: 0px 0px 100px rgb(221, 43, 43);
+    }
+
+    .gif-item .gif-content::before,
+    .gif-item .gif-content::after {
+        font-size: calc(100vh / 70);
+        color: rgb(255, 232, 236);
+        width: 100%;
+        text-align: center;
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        border-radius: 5px;
+        transition: bottom .5s ease, background-color .5s ease, opacity .5s ease;
+    }
+
+    .gif-item:hover .gif-content::before {
+        content: '';
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.103) 20%, rgba(0, 0, 0, 0.822));
+        opacity: 1;
+    }
+
+    .gif-item:hover .gif-content::after {
+        opacity: 1;
+        bottom: 5%;
+    }
+
+    div#gif-item-1 {
+        background-image: url('../images/gifs/Warrior\ dash.gif');
+    }
+
+    div#gif-content-1::after {
+        content: 'Warrior dash';
+    }
+
+    div#gif-item-2 {
+        background-image: url('../images/gifs/wawa.gif');
+    }
+
+    div#gif-content-2::after {
+        content: 'Wawayanda park';
+    }
+
+    div#gif-item-3 {
+        background-image: url('../images/gifs/fair.gif');
+    }
+
+    div#gif-content-3::after {
+        content: '3';
+    }
+
+    div#gif-item-4 {
+        background-image: url('../images/gifs/iowa.gif');
+    }
+
+    div#gif-content-4::after {
+        content: 'Iowa';
+    }
+
+    div#gif-item-5 {
+        background-image: url('../images/gifs/E3\ Vlog.gif');
+    }
+
+    div#gif-content-5::after {
+        content: 'E3';
+    }
+
+    div#gif-item-6 {
+        background-image: url('../images/gifs/New\ York.gif');
+    }
+
+    div#gif-content-6::after {
+        content: 'New York';
+    }
+
+    div#gif-item-7 {
+        background-image: url('../images/gifs/Lit_3.gif');
+    }
+
+    div#gif-content-7::after {
+        content: '7';
+    }
+
+    div#gif-item-8 {
+        background-image: url('../images/gifs/brooklyn\ museum.gif');
+    }
+
+    div#gif-content-8::after {
+        content: 'Brooklyn Museum';
+    }
+
+    div#gif-item-9 {
+        background-image: url('../images/gifs/Lit_3.gif');
+    }
+
+    div#gif-content-9::after {
+        content: '9';
+    }
+}

@@ -1,9 +1,8 @@
 /* content section */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     section#content .gif-item {
         min-width: 90vw;
         min-height: 196px;
-        /* testings */
     }
 }
 
@@ -76,9 +75,9 @@ section#content div#gif-item-1 {
 
 section#content div#gif-content-1::after {
     content: 'Warrior dash';
-}
+} */
 
-section#content div#gif-item-2 {
+/* section#content div#gif-item-2 {
     background-image: url('../images/gifs/wawa.gif');
 }
 
@@ -140,4 +139,4 @@ section#content div#gif-item-9 {
 
 section#content div#gif-content-9::after {
     content: '9';
-}
+} */

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    @include cursor(Arrow);
+}
+
+body {
+    font-family: 'Rock Salt', cursive;
+    font-size: calc(100vh / 130);
+    font-weight: bolder;
+}
+
+section {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: $global-color;
+}
