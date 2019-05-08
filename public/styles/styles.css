@@ -582,10 +582,17 @@ div#instagram:hover .fa-instagram {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
   section#content .gif-item {
     min-width: 90vw;
     min-height: 196px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 760px) {
+  section#content .gif-item {
+    min-width: 40vw;
+    min-height: 224px;
   }
 }
 
@@ -627,8 +634,6 @@ section#content .gif-item {
   position: relative;
   background-size: cover;
   background-position: center;
-  min-width: 400px;
-  min-height: 224px;
   max-width: 500px;
   max-height: 260px;
   width: 30%;
