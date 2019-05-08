@@ -10,10 +10,15 @@
   cursor: url("../../public/images/cursors/Sakura_Arrow.cur"), auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Rock Salt', cursive;
   font-size: calc(100vh / 130);
   font-weight: bolder;
+  overflow: hidden;
 }
 
 section {
@@ -584,10 +589,14 @@ div#instagram:hover .fa-instagram {
   }
 }
 
-section#content {
-  overflow: hidden;
-  min-height: 100vh;
+#content-container {
   padding: 50px 1%;
+  background-color: black;
+  height: 100vh;
+  overflow: auto;
+}
+
+section#content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;

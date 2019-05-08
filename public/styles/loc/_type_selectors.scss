@@ -6,10 +6,15 @@
     @include cursor(Arrow);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rock Salt', cursive;
     font-size: calc(100vh / 130);
     font-weight: bolder;
+    overflow: hidden;
 }
 
 section {
