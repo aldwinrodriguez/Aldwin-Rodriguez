@@ -6,7 +6,7 @@
 }
 
 #content-container {
-    padding: 50px 1%;
+    padding: 50px 4%;
     background-color: black;
     height: 100vh;
     overflow: auto;
@@ -25,11 +25,13 @@ section#content {
         align-self: center;
         position: relative;
         @include backgroundCover;
+        min-width: 400px;
+        min-height: 224px;
         max-width: 500px;
         max-height: 260px;
         width: 30%;
         height: calc(100vw/5);
-        margin: 15px 0;
+        margin: 15px 0%;
         border-radius: 5px;
         transition: box-shadow .5s ease;
     }
