@@ -8,9 +8,6 @@
       -ms-user-select: none;
           user-select: none;
   cursor: url("../../public/images/cursors/Sakura_Arrow.cur"), auto;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -19,6 +16,7 @@ body {
   font-size: calc(100vh / 130);
   font-weight: bolder;
   overflow: hidden;
+  max-height: 100vh;
 }
 
 section {
@@ -598,9 +596,9 @@ div#instagram:hover .fa-instagram {
 
 #content-container {
   padding: 50px 4%;
-  background-color: black;
   height: 100vh;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 section#content {
@@ -640,15 +638,6 @@ section#content .gif-item {
   height: calc(100vw/5);
   margin: 15px 0%;
   border-radius: 5px;
-  -webkit-transition: -webkit-box-shadow .5s ease;
-  transition: -webkit-box-shadow .5s ease;
-  transition: box-shadow .5s ease;
-  transition: box-shadow .5s ease, -webkit-box-shadow .5s ease;
-}
-
-section#content .gif-item:hover {
-  -webkit-box-shadow: 0px 0px 100px #dd2b2b;
-          box-shadow: 0px 0px 100px #dd2b2b;
 }
 
 section#content .gif-item .gif-content::before,
@@ -661,6 +650,7 @@ section#content .gif-item .gif-content::after {
   position: absolute;
   bottom: 0%;
   left: 50%;
+  z-index: 10;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
@@ -672,8 +662,8 @@ section#content .gif-item .gif-content::after {
 section#content .gif-item:hover .gif-content::before {
   content: '';
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.103)), to(rgba(0, 0, 0, 0.822)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.103) 20%, rgba(0, 0, 0, 0.822));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.295)), to(rgba(0, 0, 0, 0.788)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.788));
   opacity: 1;
 }
 
@@ -682,72 +672,45 @@ section#content .gif-item:hover .gif-content::after {
   bottom: 5%;
 }
 
-section#content div#gif-item-1 {
-  background-image: url("../images/gifs/Warrior dash.gif");
+section#content .gif-content img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
 
 section#content div#gif-content-1::after {
   content: 'Warrior dash';
 }
 
-section#content div#gif-item-2 {
-  background-image: url("../images/gifs/wawa.gif");
-}
-
 section#content div#gif-content-2::after {
   content: 'Wawayanda park';
-}
-
-section#content div#gif-item-3 {
-  background-image: url("../images/gifs/fair.gif");
 }
 
 section#content div#gif-content-3::after {
   content: '3';
 }
 
-section#content div#gif-item-4 {
-  background-image: url("../images/gifs/iowa.gif");
-}
-
 section#content div#gif-content-4::after {
   content: 'Iowa';
-}
-
-section#content div#gif-item-5 {
-  background-image: url("../images/gifs/E3 Vlog.gif");
 }
 
 section#content div#gif-content-5::after {
   content: 'E3';
 }
 
-section#content div#gif-item-6 {
-  background-image: url("../images/gifs/New York.gif");
-}
-
 section#content div#gif-content-6::after {
   content: 'New York';
-}
-
-section#content div#gif-item-7 {
-  background-image: url("../images/gifs/Lit_3.gif");
 }
 
 section#content div#gif-content-7::after {
   content: '7';
 }
 
-section#content div#gif-item-8 {
-  background-image: url("../images/gifs/brooklyn museum.gif");
-}
-
 section#content div#gif-content-8::after {
   content: 'Brooklyn Museum';
-}
-
-section#content div#gif-item-9 {
-  background-image: url("../images/gifs/Lit_3.gif");
 }
 
 section#content div#gif-content-9::after {

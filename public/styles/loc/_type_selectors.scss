@@ -4,9 +4,6 @@
     box-sizing: border-box;
     user-select: none;
     @include cursor(Arrow);
-}
-
-html {
     scroll-behavior: smooth;
 }
 
@@ -15,6 +12,7 @@ body {
     font-size: calc(100vh / 130);
     font-weight: bolder;
     overflow: hidden;
+    max-height: 100vh;
 }
 
 section {
