@@ -8,7 +8,6 @@
       -ms-user-select: none;
           user-select: none;
   cursor: url("../../public/images/cursors/Sakura_Arrow.cur"), auto;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -38,8 +37,8 @@ div.background {
   background-position: center;
   height: 100vh;
   z-index: -10;
-  -webkit-filter: blur(3px) saturate(1);
-          filter: blur(3px) saturate(1);
+  -webkit-filter: blur(8px) saturate(1);
+          filter: blur(8px) saturate(1);
 }
 
 div.background-transform {
@@ -55,7 +54,8 @@ div.background-transform {
   height: 100vh;
 }
 
-#home .nav, #home .subNav {
+#home .nav,
+#home .subNav {
   position: absolute;
 }
 
@@ -118,7 +118,7 @@ div.background-transform {
 }
 
 #home .contact-transform {
-  top: calc(100vh / 9);
+  top: 11%;
   -webkit-transition: top 1.2s, opacity 1.2s;
   transition: top 1.2s, opacity 1.2s;
   opacity: 1;
@@ -596,9 +596,9 @@ div#instagram:hover .fa-instagram {
 
 #content-container {
   padding: 50px 4%;
+  background-color: black;
   height: 100vh;
-  overflow: auto;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 section#content {
@@ -640,17 +640,21 @@ section#content .gif-item {
   border-radius: 5px;
 }
 
+section#content .gif-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: calc(100vh / 70);
+  color: #e9e3e4;
+  text-align: center;
+}
+
 section#content .gif-item .gif-content::before,
 section#content .gif-item .gif-content::after {
-  font-size: calc(100vh / 70);
-  color: #ffe8ec;
-  width: 100%;
-  text-align: center;
   content: '';
   position: absolute;
   bottom: 0%;
   left: 50%;
-  z-index: 10;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
@@ -660,10 +664,10 @@ section#content .gif-item .gif-content::after {
 }
 
 section#content .gif-item:hover .gif-content::before {
-  content: '';
+  width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.295)), to(rgba(0, 0, 0, 0.788)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.788));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.226)), to(rgba(0, 0, 0, 0.877)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.877));
   opacity: 1;
 }
 
@@ -672,7 +676,8 @@ section#content .gif-item:hover .gif-content::after {
   bottom: 5%;
 }
 
-section#content .gif-content img {
+section#content .gif-item img {
+  display: block;
   position: absolute;
   height: 100%;
   width: 100%;

@@ -5,7 +5,7 @@ div.background {
     @include backgroundCover;
     height: 100vh;
     z-index: -10;
-    filter: blur(3px) saturate(1);
+    filter: blur(8px) saturate(1);
 }
 
 div.background-transform {

@@ -14,10 +14,9 @@
 
 #content-container {
     padding: 50px 4%;
-    // background-color: black;
+    background-color: black;
     height: 100vh;
-    overflow: auto;
-    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 section#content {
@@ -45,18 +44,21 @@ section#content {
     // .gif-item:hover {
     //     box-shadow: 0px 0px 50px rgb(221, 43, 43);
     // }
+    .gif-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: calc(100vh / 70);
+        color: rgb(233, 227, 228);
+        text-align: center;
+    }
 
     .gif-item .gif-content::before,
     .gif-item .gif-content::after {
-        font-size: calc(100vh / 70);
-        color: rgb(255, 232, 236);
-        width: 100%;
-        text-align: center;
         content: '';
         position: absolute;
         bottom: 0%;
         left: 50%;
-        z-index: 10;
         transform: translateX(-50%);
         opacity: 0;
         border-radius: 5px;
@@ -64,9 +66,9 @@ section#content {
     }
 
     .gif-item:hover .gif-content::before {
-        content: '';
+        width: 100%;
         height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.788));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.877));
         opacity: 1;
     }
 
@@ -75,7 +77,8 @@ section#content {
         bottom: 5%;
     }
 
-    .gif-content img {
+    .gif-item img {
+        display: block;
         position: absolute;
         height: 100%;
         width: 100%;

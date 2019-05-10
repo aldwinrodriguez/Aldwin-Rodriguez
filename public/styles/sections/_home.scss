@@ -2,7 +2,8 @@
     color: $global-color;
     height: 100vh;
 
-    .nav, .subNav {
+    .nav,
+    .subNav {
         position: absolute;
     }
 
@@ -42,7 +43,7 @@
     }
 
     .contact-transform {
-        top: calc(100vh / 9);
+        top: 11%;
         transition: top 1.2s, opacity 1.2s;
         @include navTransform;
     }
@@ -216,6 +217,7 @@
     div.socialContainer div:hover {
         text-decoration-line: underline;
     }
+
     .socialContainer {
         position: relative;
         color: #ff6262;
