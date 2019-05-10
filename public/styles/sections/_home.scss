@@ -122,9 +122,10 @@
 }
 
 #name span:nth-child(1) {
+    position: relative;
+    bottom: 1.4vw;
     color: #fd3c4c;
     opacity: .98;
-    vertical-align: text-top;
     font-size: 10vw;
     font-weight: bolder;
 }

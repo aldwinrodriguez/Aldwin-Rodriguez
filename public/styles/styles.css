@@ -223,9 +223,10 @@ div.background-transform {
 }
 
 #name span:nth-child(1) {
+  position: relative;
+  bottom: 1.4vw;
   color: #fd3c4c;
   opacity: .98;
-  vertical-align: text-top;
   font-size: 10vw;
   font-weight: bolder;
 }
@@ -596,7 +597,7 @@ div#instagram:hover .fa-instagram {
 
 #content-container {
   padding: 50px 4%;
-  background-image: linear-gradient(-225deg, #facccc 0%, #a85a5a 70%);
+  background-image: linear-gradient(-225deg, rgba(250, 204, 204, 0.788) 50%, rgba(168, 90, 90, 0.801) 80%);
   height: 100vh;
   overflow-y: auto;
 }
