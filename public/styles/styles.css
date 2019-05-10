@@ -226,7 +226,7 @@ div.background-transform {
   color: #fd3c4c;
   opacity: .98;
   vertical-align: text-top;
-  font-size: calc(100vw /10);
+  font-size: 10vw;
   font-weight: bolder;
 }
 
@@ -234,7 +234,7 @@ div.background-transform {
   color: #e7709a;
   opacity: .75;
   vertical-align: bottom;
-  font-size: calc(100vw /9);
+  font-size: 12vw;
   font-weight: bolder;
 }
 
@@ -596,7 +596,7 @@ div#instagram:hover .fa-instagram {
 
 #content-container {
   padding: 50px 4%;
-  background-color: black;
+  background-image: linear-gradient(-225deg, #facccc 0%, #a85a5a 70%);
   height: 100vh;
   overflow-y: auto;
 }
