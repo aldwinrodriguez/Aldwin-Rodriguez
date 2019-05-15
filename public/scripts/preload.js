@@ -10,8 +10,6 @@ $('#home').ready(function (){
     typeWriter();
     }, 1000);
 
-    let speed = 1;
-
     function typeWriter() {
         let letter;
         if (i < txt.length) {
@@ -22,7 +20,7 @@ $('#home').ready(function (){
             }
             $($name).append(letter);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(typeWriter, 300);
         }
     }
 })

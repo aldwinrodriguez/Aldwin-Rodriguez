@@ -49,6 +49,7 @@
 
             #submit {
                 width: 20%;
+
                 button {
                     width: 100%;
                     padding: 5%;
@@ -61,13 +62,41 @@
                     color: #ff6262;
                     font-weight: bold;
                 }
-                &:hover button{
+
+                &:hover button {
                     transition: color, background-color;
                     transition-duration: .5s;
                     transition-timing-function: ease;
                     color: rgb(255, 232, 236);
                     background-color: rgb(255, 59, 59);
+                    @include cursor(Link);
                 }
+            }
+        }
+
+        #closeContactSub {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            font-size: 12px;
+            margin: 10px;
+            text-align: center;
+            color: rgb(255, 60, 60);
+            background-color: rgb(255, 232, 236);
+            border-radius: 4px;
+            transition: color, background-color;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+
+            &:hover {
+                background-color: rgb(255, 60, 60);
+                color: rgb(255, 232, 236);
+                transition: color, background-color;
+                transition-duration: .5s;
+                transition-timing-function: ease;
+                @include cursor(Link);
             }
         }
     }
@@ -477,6 +506,10 @@ div#instagram:hover .fa-instagram {
                     margin: 5%;
                 }
 
+                div:first-child {
+                    margin-top: 15%;
+                }
+
                 select,
                 input[type=email] {
                     width: 100%;
@@ -493,6 +526,14 @@ div#instagram:hover .fa-instagram {
                     width: 100%;
                 }
 
+            }
+
+            #closeContactSub {
+                right: 0;
+                margin: 10px;
+                width: 25px;
+                height: 25px;
+                font-size: 10px;
             }
         }
     }

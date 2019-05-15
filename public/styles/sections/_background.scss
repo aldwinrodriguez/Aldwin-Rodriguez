@@ -1,15 +1,8 @@
 div.background {
     @include positionAbsolute;
     right: 0;
-    background-image: url('../../public/images/beautiful-bloom-blooming-1023953.jpg');
+    background-image: url('../../public/images/beautiful-bloom-blooming-10239531.jpg');
     @include backgroundCover;
     height: 100vh;
     z-index: -10;
-    filter: blur(8px) saturate(1);
-}
-
-div.background-transform {
-    filter: blur(15px) saturate(1.2);
-    transition: -webkit-filter 1.2s ease, filter 1.2s ease;
-    transition-delay: 11.3s;
 }

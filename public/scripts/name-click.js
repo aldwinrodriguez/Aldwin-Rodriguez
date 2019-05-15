@@ -1,6 +1,4 @@
 $(function () {
-    $($('#home').prev()[0]).addClass('background-transform');
-
     let $nav = $('#home div.nav');
     let $name = $nav[0];
     let $resume = $nav[1];
@@ -13,12 +11,12 @@ $(function () {
     let $youtube = $socialNav[2];
     let $github = $socialNav[3];
 
-    // setTimeout(function () {
+    setTimeout(function () {
         move();
-        // setTimeout(function () {
-            // move();
-        // }, 2600);
-    // }, 7700);
+        setTimeout(function () {
+            move();
+        }, 2600);
+    }, 7700);
 
     $($name).on('click', move);
 
