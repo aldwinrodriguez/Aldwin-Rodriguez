@@ -13,12 +13,12 @@ $(function () {
     let $youtube = $socialNav[2];
     let $github = $socialNav[3];
 
-    setTimeout(function () {
+    // setTimeout(function () {
         move();
-        setTimeout(function () {
-            move();
-        }, 2600);
-    }, 7700);
+        // setTimeout(function () {
+            // move();
+        // }, 2600);
+    // }, 7700);
 
     $($name).on('click', move);
 

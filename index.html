@@ -65,8 +65,31 @@
     <div class="background"></div>
     <section id='home'>
         <div id='name' class="nav"></div>
+        <div id="contactSub">
+            <div>
+                <form action="https://formspree.io/niwdla0405@gmail.com" method="POST">
+                    <div>
+                        <select name="Reason" style="text-align: center;">
+                            <option value="hi">Say hi</option>
+                            <option value="ideas">I have ideas I want to share</option>
+                            <option value="resume">Resume</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email" id="">
+                    </div>
+                    <div>
+                        <textarea name="message" id="" placeholder="Enter here..."></textarea>
+                    </div>
+                    <div id="submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <div id="resume" class="nav resume-preTransform">Resume</div>
-        <div id="contact" class="nav contact-preTransform"><a href="mailto:niwdla0405@gmail.com">Contact me</a></div>
+        <div id="contact" class="nav contact-preTransform">Contact me</a></div>
         <div id="project" class="nav project-preTransform">Projects</div>
         <div id="social" class="nav social-preTransform">
             <div class="socialContainer">
@@ -84,7 +107,7 @@
         <a class='go' href="#content" style="position:absolute;bottom:0;right:0;"><button>next</button></a>
 
     </section>
-    <section id='content'>
+    <!-- <section id='content'>
         <div id='content-container'>
             <a class='go' href="#home" style="position:absolute;top:0;left:0;"><button>prev</button></a>
             <div class="gif-row">
@@ -133,14 +156,14 @@
                     <div class="loading"></div>
                 </div>
                 <div id="gif-item-9" class="gif-item">
-                    <img src="public/images/gifs/lit" alt="">
+                    <img src="public/images/gifs/li" alt="">
                     <div id="gif-content-9" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
             </div>
         </div>
         <button id="nexts" style="position:absolute;bottom:0;right:0;"><a href="#lol">next</a></button>
-    </section>
+    </section> -->
     <div id="loading"></div>
     <script src="public/scripts/jquery-3.4.0.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
@@ -171,6 +194,13 @@
                     });
                 }
             });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#contact').click(function () {
+                $("#contactSub").fadeToggle("slow", function () {})
+            })
         });
     </script>
 </body>
