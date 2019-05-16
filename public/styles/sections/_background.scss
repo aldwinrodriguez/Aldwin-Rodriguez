@@ -1,7 +1,7 @@
 div.background {
     @include positionAbsolute;
     right: 0;
-    background-color: rgb(253, 198, 207);
+    background-color: rgb(255, 220, 227);
     background-image: url('../../public/images/beautiful-bloom-blooming-10239531.jpg');
     @include backgroundCover;
     height: 100vh;

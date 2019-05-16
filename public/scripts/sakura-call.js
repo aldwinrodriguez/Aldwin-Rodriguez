@@ -1,4 +1,4 @@
-$(window).load(function () {
+$(function () {
     if ($(window).width() <= 1024) {
         $('body').sakura({
             blowAnimations: ['blow-hard-left', 'blow-hard-right'], // Horizontal movement animation names

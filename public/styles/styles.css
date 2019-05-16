@@ -32,7 +32,7 @@ div.background {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fdc6cf;
+  background-color: #ffdce3;
   background-image: url("../../public/images/beautiful-bloom-blooming-10239531.jpg");
   background-size: cover;
   background-position: center;
@@ -800,6 +800,7 @@ div#instagram:hover .fa-instagram {
 
 #content-container {
   padding: 50px 4%;
+  background-color: #ffdce3;
   background-image: linear-gradient(-225deg, rgba(250, 204, 204, 0.788) 50%, #a85a5a 80%);
   height: 100vh;
   overflow-y: auto;
@@ -934,9 +935,9 @@ section#content div#gif-content-9::after {
   font-family: 'Permanent Marker', cursive;
   text-align: left;
   padding: 5vh 10%;
-  color: #490a0a;
+  color: #3a0101;
   letter-spacing: .5px;
-  background-color: #fdc6cf;
+  background-color: #ffdce3;
   background-image: url("../../public/images/beautiful-bloom-blooming-10239532.jpg");
   background-size: cover;
   background-position: center;
@@ -945,35 +946,6 @@ section#content div#gif-content-9::after {
 
 #proj #projectContainer {
   width: 100%;
-}
-
-#proj #header {
-  display: inline-block;
-  font-size: 2.8em;
-  margin-bottom: 2%;
-  font-weight: lighter;
-}
-
-#proj tbody td.desc {
-  font-family: 'Patrick Hand', cursive;
-}
-
-#proj table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#proj #projectContainer > div:nth-child(2) > table > thead > tr > th {
-  font-size: 1.2em;
-  border-bottom: 3px solid black;
-}
-
-#proj #projectContainer > div:nth-child(2) > table > tbody > tr td {
-  padding: .5% 3% .5% 0%;
-}
-
-#proj #projectContainer > div:nth-child(2) > table tr {
-  border-bottom: .5px solid black;
 }
 
 #proj #projectContainer > div:nth-child(2) > table > thead > tr > th:nth-child(1) {
@@ -988,6 +960,28 @@ section#content div#gif-content-9::after {
   width: 15%;
 }
 
+#proj #projectContainer tbody td.desc {
+  font-family: 'Patrick Hand', cursive;
+}
+
+#proj #projectContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > thead > tr > th {
+  font-size: 1.2em;
+  border-bottom: 3px solid #9c4646;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > tbody > tr td {
+  padding: .5% 3% .5% 0%;
+}
+
+#proj #projectContainer > div:nth-child(2) > table tr {
+  border-bottom: 0.5px solid #9c4646;
+}
+
 #proj #projectContainer > div:nth-child(2) > table > tbody a {
   color: #fd4a4a;
   text-shadow: -0.5px 0.5px #520000;
@@ -1000,6 +994,82 @@ section#content div#gif-content-9::after {
   -webkit-transition: text-shadow .2s ease;
   transition: text-shadow .2s ease;
   text-shadow: -2px 2px #520000;
+}
+
+#proj #plans {
+  margin-top: 5%;
+}
+
+#proj #plans ul {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.2em;
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 760px) {
+  #proj #plans ul {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2em;
+    margin-left: 10%;
+  }
+}
+
+#proj #plans .header {
+  margin: 0;
+}
+
+#proj #connect {
+  position: absolute;
+  background-color: #720b0b;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  color: #ffeaea;
+  font-family: 'Patrick Hand', cursive;
+  -webkit-box-shadow: 0px 0px 5px #520000;
+          box-shadow: 0px 0px 5px #520000;
+}
+
+#proj #connect > div:nth-child(1) {
+  height: 75%;
+}
+
+#proj #connect > div:nth-child(1) > div:nth-child(1) {
+  padding: .5em;
+  height: 25%;
+}
+
+#proj #connect > div:nth-child(1) > div:nth-child(2) {
+  height: 75%;
+  padding: .3em;
+  font-size: 2em;
+}
+
+#proj #connect > div:nth-child(1) > div:nth-child(2) > i {
+  margin: 0 1%;
+}
+
+#proj #connect > a:nth-child(2) > * {
+  font-weight: bolder;
+  color: #ff5b5b;
+  margin: 0 1%;
+  -webkit-transition: font-size .2s ease;
+  transition: font-size .2s ease;
+}
+
+#proj #connect > a:nth-child(2):hover {
+  font-size: 1.2em;
+  -webkit-transition: font-size .2s ease;
+  transition: font-size .2s ease;
+}
+
+#proj .header {
+  display: inline-block;
+  font-size: 2.8em;
+  margin-bottom: 2%;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 760px) {
