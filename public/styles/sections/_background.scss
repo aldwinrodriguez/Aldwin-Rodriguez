@@ -1,6 +1,7 @@
 div.background {
     @include positionAbsolute;
     right: 0;
+    background-color: rgb(253, 198, 207);
     background-image: url('../../public/images/beautiful-bloom-blooming-10239531.jpg');
     @include backgroundCover;
     height: 100vh;
@@ -23,7 +24,7 @@ section>a.go {
     transition-delay: 5s;
     opacity: .1;
     transition: opacity .5s ease;
-    animation: upanddown .5s linear 10s 10 alternate;
+    animation: upanddown .2s linear 10s 20 alternate;
 
     &:hover {
         transition: opacity .5s ease;
@@ -44,7 +45,7 @@ section>a.down {
 
     100% {
         opacity: 1;
-        bottom: 0%;
+        bottom: 1%;
     }
 }
 

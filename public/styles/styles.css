@@ -32,6 +32,7 @@ div.background {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #fdc6cf;
   background-image: url("../../public/images/beautiful-bloom-blooming-10239531.jpg");
   background-size: cover;
   background-position: center;
@@ -59,8 +60,8 @@ section > a.go {
   opacity: .1;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
-  -webkit-animation: upanddown .5s linear 10s 10 alternate;
-          animation: upanddown .5s linear 10s 10 alternate;
+  -webkit-animation: upanddown .2s linear 10s 20 alternate;
+          animation: upanddown .2s linear 10s 20 alternate;
 }
 
 section > a.go:hover {
@@ -79,7 +80,7 @@ section > a.down {
   }
   100% {
     opacity: 1;
-    bottom: 0%;
+    bottom: 1%;
   }
 }
 
@@ -89,7 +90,7 @@ section > a.down {
   }
   100% {
     opacity: 1;
-    bottom: 0%;
+    bottom: 1%;
   }
 }
 
@@ -923,5 +924,88 @@ section#content div#gif-content-8::after {
 
 section#content div#gif-content-9::after {
   content: '9';
+}
+
+#proj {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2.7em;
+  font-family: 'Permanent Marker', cursive;
+  text-align: left;
+  padding: 5vh 10%;
+  color: #490a0a;
+  letter-spacing: .5px;
+  background-color: #fdc6cf;
+  background-image: url("../../public/images/beautiful-bloom-blooming-10239532.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+}
+
+#proj #projectContainer {
+  width: 100%;
+}
+
+#proj #header {
+  display: inline-block;
+  font-size: 2.8em;
+  margin-bottom: 2%;
+  font-weight: lighter;
+}
+
+#proj tbody td.desc {
+  font-family: 'Patrick Hand', cursive;
+}
+
+#proj table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > thead > tr > th {
+  font-size: 1.2em;
+  border-bottom: 3px solid black;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > tbody > tr td {
+  padding: .5% 3% .5% 0%;
+}
+
+#proj #projectContainer > div:nth-child(2) > table tr {
+  border-bottom: .5px solid black;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > thead > tr > th:nth-child(1) {
+  width: 20%;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > thead > tr > th:nth-child(2) {
+  width: 65%;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > thead > tr > th:nth-child(3) {
+  width: 15%;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > tbody a {
+  color: #fd4a4a;
+  text-shadow: -0.5px 0.5px #520000;
+  -webkit-transition: text-shadow .2s ease;
+  transition: text-shadow .2s ease;
+}
+
+#proj #projectContainer > div:nth-child(2) > table > tbody a:hover {
+  cursor: url("../../public/images/cursors/Sakura_Link.cur"), auto;
+  -webkit-transition: text-shadow .2s ease;
+  transition: text-shadow .2s ease;
+  text-shadow: -2px 2px #520000;
+}
+
+@media screen and (max-width: 760px) {
+  #proj {
+    font-size: 2em;
+    padding: 5vh 2%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

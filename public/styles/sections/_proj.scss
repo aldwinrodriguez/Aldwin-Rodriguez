@@ -1,0 +1,80 @@
+#proj {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2.7em;
+    font-family: 'Permanent Marker', cursive;
+    text-align: left;
+    padding: 5vh 10%;
+    color: rgb(73, 10, 10);
+    letter-spacing: .5px;
+    background-color: rgb(253, 198, 207);
+    background-image: url('../../public/images/beautiful-bloom-blooming-10239532.jpg');
+    @include backgroundCover;
+    overflow: auto;
+
+
+    #projectContainer {
+        width: 100%;
+    }
+
+    #header {
+        display: inline-block;
+        font-size: 2.8em;
+        margin-bottom: 2%;
+        font-weight: lighter;
+    }
+
+    tbody td.desc {
+        font-family: 'Patrick Hand', cursive;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse
+    }
+
+    #projectContainer>div:nth-child(2)>table>thead>tr>th {
+        font-size: 1.2em;
+        border-bottom: 3px solid black;
+    }
+
+    #projectContainer>div:nth-child(2)>table>tbody>tr td {
+        padding: .5% 3% .5% 0%;
+    }
+
+    #projectContainer>div:nth-child(2)>table tr {
+        border-bottom: .5px solid black;
+    }
+
+    #projectContainer>div:nth-child(2)>table>thead>tr>th:nth-child(1) {
+        width: 20%;
+    }
+
+    #projectContainer>div:nth-child(2)>table>thead>tr>th:nth-child(2) {
+        width: 65%;
+    }
+
+    #projectContainer>div:nth-child(2)>table>thead>tr>th:nth-child(3) {
+        width: 15%;
+    }
+
+    #projectContainer>div:nth-child(2)>table>tbody a {
+        color: #fd4a4a;
+        text-shadow: -.5px .5px rgb(82, 0, 0);
+        transition: text-shadow .2s ease;
+
+        &:hover {
+            @include cursor(Link);
+            transition: text-shadow .2s ease;
+            text-shadow: -2px 2px rgb(82, 0, 0);
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #proj {
+        font-size: 2em;
+        padding: 5vh 2%;
+    }
+}
