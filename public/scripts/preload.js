@@ -7,6 +7,7 @@ $('#home').ready(function (){
     $('div#loading').remove();
     $('section#home').css("display", "block");
     $('section#content').css("display", "flex");
+    $('section#proj').css("display", "block");
     typeWriter();
     }, 1000);
 
