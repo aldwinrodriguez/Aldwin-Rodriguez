@@ -39,6 +39,68 @@ div.background {
   z-index: -10;
 }
 
+section > a.go > i {
+  font-size: 50px;
+}
+
+section > a.go {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #ff6262;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+  opacity: .1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  -webkit-animation: upanddown .5s linear 10s 10 alternate;
+          animation: upanddown .5s linear 10s 10 alternate;
+}
+
+section > a.go:hover {
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  opacity: 1;
+}
+
+section > a.down {
+  bottom: 2.5%;
+}
+
+@-webkit-keyframes upanddown {
+  0% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0%;
+  }
+}
+
+@keyframes upanddown {
+  0% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0%;
+  }
+}
+
+section > a.up {
+  top: .5%;
+}
+
+section > a.downs {
+  bottom: 1%;
+}
+
 #home {
   color: #fd3c4c;
   height: 100vh;

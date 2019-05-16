@@ -81,7 +81,6 @@
                 </div>
             </div>
         </div>
-        <a class='go' href="#content" style="position:absolute;bottom:0;right:0;"><button>next</button></a>
         <div id="contactSub" style="display:none;">
             <div>
                 <form action="https://formspree.io/niwdla0405@gmail.com" method="POST">
@@ -107,10 +106,12 @@
                 <i class="fas fa-times"></i>
             </div>
         </div>
+        <a class='go down' href="#content"><i class="fas fa-chevron-circle-down"></i></a>
     </section>
     <section id='content'>
+        <a class='go up' href="#home"><i class="fas fa-chevron-circle-up"></i></a>
+        <a class='go downs' href="#proj"><i class="fas fa-chevron-circle-down"></i></a>
         <div id='content-container'>
-            <a class='go' href="#home" style="position:absolute;top:0;left:0;"><button>prev</button></a>
             <div class="gif-row">
                 <div id="gif-item-1" class="gif-item">
                     <img src="public/images/gifs/Warrior dash.gif" alt="">
@@ -163,9 +164,11 @@
                 </div>
             </div>
         </div>
-        <button id="nexts" style="position:absolute;bottom:0;right:0;"><a href="#lol">next</a></button>
     </section>
-    <div id="loading"></div>
+    <section id="proj">
+        <div>exmaple</div>
+    </section>
+    <!-- <div id="loading"></div> -->
     <script src="public/scripts/jquery-3.4.0.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
     <script src="public/scripts/jquery-sakura.min.js" type="text/javascript"></script>
@@ -221,8 +224,9 @@
                     .attr('placeholder',
                         'For privacy purposes, please let me know your reason, along with your email above. Thank you.'
                     );
-                $("#home #contactSub > div:nth-child(1) > form > div:nth-child(2) > input[type=email]").attr(
-                    'required', 'yes');
+                $("#home #contactSub > div:nth-child(1) > form > div:nth-child(2) > input[type=email]")
+                    .attr(
+                        'required', 'yes');
             })
         });
     </script>
