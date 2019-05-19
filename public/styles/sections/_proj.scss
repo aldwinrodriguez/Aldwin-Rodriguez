@@ -113,18 +113,30 @@
                 height: 75%;
                 padding: .3em;
                 font-size: 2em;
-                > i {
+
+                >a {
+                    color: #ffeaea;
                     margin: 0 1%;
+
+                    > i {
+                        &:hover {
+                            transition: color .4s ease;
+                            color: rgb(255, 152, 169);
+                            @include cursor(Link);
+                        }
+                    }
                 }
             }
         }
+
         >a:nth-child(2) {
-            > * {
+            >* {
                 font-weight: bolder;
                 color: #ff5b5b;
                 margin: 0 1%;
                 transition: font-size .2s ease;
             }
+
             &:hover {
                 font-size: 1.2em;
                 transition: font-size .2s ease;

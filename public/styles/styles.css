@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -892,39 +893,39 @@ section#content .gif-item img {
 }
 
 section#content div#gif-content-1::after {
-  content: 'Warrior dash';
+  content: 'Water gun fight 🔫💦';
 }
 
 section#content div#gif-content-2::after {
-  content: 'Wawayanda park';
+  content: 'Warrior challenge 🌞';
 }
 
 section#content div#gif-content-3::after {
-  content: '3';
+  content: 'Fair 🎡🎢';
 }
 
 section#content div#gif-content-4::after {
-  content: 'Iowa';
+  content: 'Iowa ☃️';
 }
 
 section#content div#gif-content-5::after {
-  content: 'E3';
+  content: 'E3 🎮';
 }
 
 section#content div#gif-content-6::after {
-  content: 'New York';
+  content: 'PAX 🕹️👾';
 }
 
 section#content div#gif-content-7::after {
-  content: '7';
+  content: 'Lake 🏐';
 }
 
 section#content div#gif-content-8::after {
-  content: 'Brooklyn Museum';
+  content: 'Museum 🎨';
 }
 
 section#content div#gif-content-9::after {
-  content: '9';
+  content: 'New York 🗽';
 }
 
 #proj {
@@ -1047,8 +1048,16 @@ section#content div#gif-content-9::after {
   font-size: 2em;
 }
 
-#proj #connect > div:nth-child(1) > div:nth-child(2) > i {
+#proj #connect > div:nth-child(1) > div:nth-child(2) > a {
+  color: #ffeaea;
   margin: 0 1%;
+}
+
+#proj #connect > div:nth-child(1) > div:nth-child(2) > a > i:hover {
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+  color: #ff98a9;
+  cursor: url("../../public/images/cursors/Sakura_Link.cur"), auto;
 }
 
 #proj #connect > a:nth-child(2) > * {

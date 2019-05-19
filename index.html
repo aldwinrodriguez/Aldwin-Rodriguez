@@ -116,12 +116,12 @@
         <div id='content-container'>
             <div class="gif-row">
                 <div id="gif-item-1" class="gif-item">
-                    <img src="public/images/gifs/Warrior dash.gif" alt="">
+                    <img src="public/images/gifs/Water gun fight.gif" alt="">
                     <div id="gif-content-1" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
                 <div id="gif-item-2" class="gif-item">
-                    <img src="public/images/gifs/wawa.gif" alt="">
+                    <img src="public/images/gifs/Warrior dash.gif" alt="">
                     <div id="gif-content-2" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
@@ -143,14 +143,14 @@
                     <div class="loading"></div>
                 </div>
                 <div id="gif-item-6" class="gif-item">
-                    <img src="public/images/gifs/New York.gif" alt="">
+                    <img src="public/images/gifs/Pax.gif" alt="">
                     <div id="gif-content-6" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
             </div>
             <div class="gif-row">
                 <div id="gif-item-7" class="gif-item">
-                    <img src="public/images/gifs/lit" alt="">
+                    <img src="public/images/gifs/wawa.gif" alt="">
                     <div id="gif-content-7" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
@@ -160,7 +160,7 @@
                     <div class="loading"></div>
                 </div>
                 <div id="gif-item-9" class="gif-item">
-                    <img src="public/images/gifs/li" alt="">
+                    <img src="public/images/gifs/New York.gif" alt="">
                     <div id="gif-content-9" class="gif-content"> </div>
                     <div class="loading"></div>
                 </div>
@@ -231,11 +231,11 @@
                     Connect
                 </div>
                 <div>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-github-square"></i>
-                    <i class="fab fa-discord"></i>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
             <a class='go downs here' href="#home">
@@ -253,7 +253,6 @@
     <script>
         $(function () {
             $('section#content .gif-item img').load(function () {
-                console.log('loading class removed');
                 $(this).next().next().fadeOut('fast', function () {
                     $(this).removeClass('loading');
                 })
