@@ -254,7 +254,7 @@
         $(function () {
             $('section#content .gif-item img').load(function () {
                 $(this).next().next().fadeOut('fast', function () {
-                    $(this).removeClass('loading');
+                    $(this).remove();
                 })
             })
         });
