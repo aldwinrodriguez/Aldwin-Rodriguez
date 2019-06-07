@@ -197,14 +197,16 @@
                             <td><a href="http://foodtrack2019.com/" target="_blank">FoodTrack</a></td>
                             <td class="desc">The purpose of this app is to track food that you consumed and lists
                                 everything you ate within 2 days. If 'REACTION' button is pressed, it will tell the app
-                                that something you ate within 2 days caused a reaction and informs you which food induced it. This app can also be used as a
+                                that something you ate within 2 days caused a reaction and informs you which food
+                                induced it. This app can also be used as a
                                 food tracker if you have undiscovered food reaction.
                             </td>
                             <td class="desc">NodeJS, HTML, CSS, Javascript</td>
                         </tr>
                         <tr>
                             <td><a href="http://lastorhomeimprove.com/" target="_blank">Lastor LLC</a></td>
-                            <td class="desc">In progress static site dedicated for Lastor Home Improvement entailing services, accomodations, informations and contact.</td>
+                            <td class="desc">In progress static site dedicated for Lastor Home Improvement entailing
+                                services, accomodations, informations and contact.</td>
                             <td class="desc">HTML, CSS, Javascript</td>
                         </tr>
                     </tbody>
@@ -248,17 +250,9 @@
     <script src="public/scripts/name-click.js" type="text/javascript"></script>
     <script src="public/scripts/sakura-call.js" type="text/javascript"></script>
     <script src="public/scripts/preload.js" type="text/javascript"></script>
+
     <script>
-        $(function () {
-            $('section#content .gif-item img').load(function () {
-                $(this).next().next().fadeOut('fast', function () {
-                    $(this).remove();
-                })
-            })
-        });
-    </script>
-    <script>
-        $(function () {
+        $('#home').ready(function () {
             $("a.here").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
@@ -270,7 +264,7 @@
                     });
                 }
             });
-        });
+        })
     </script>
     <script>
         $(function () {
@@ -301,6 +295,13 @@
                         'required', 'yes');
             })
         });
+    </script>
+    <script>
+            $('section#content .gif-item img').load(function () {
+                $(this).next().next().fadeOut('fast', function () {
+                    $(this).remove();
+                })
+            })
     </script>
 </body>
 
